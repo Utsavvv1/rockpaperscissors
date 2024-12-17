@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(1, 2, 39);
+    color: white;
+    margin: 0; 
+    font-family: Arial, sans-serif;
+}
+
+/* justify-content (horizontal) and align-items (vertical). */
+
+.centre {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+
+    gap: 5vw;
+}
+.card {
+    border: 5px solid wheat;
+    padding: 5%;
+}
+
+#player_score {
+    
+    text-align: center;
+
+    border: 2px solid white;
+
+}
+
+#comp_score {
+
+    text-align: center;
+}
+
+
+.choices {
+    display: flex;
+    margin-top: 10%;
+    padding: 5%; 
+    border: 1px solid white ;
+}

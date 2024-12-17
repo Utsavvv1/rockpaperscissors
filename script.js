@@ -41,16 +41,15 @@ function play(){
     let hs = 0;
     let cs = 0;
 
-    for (let i = 0 ; i < 5 ; i += 1){
-        let hc = gethumanchoice();
-        let cc = getcompchoice();
-        console.log(`Computer chose : ${cc}\nPlayer chose : ${hc}`)
-        let result = round(hc , cc);
-        
-        if (result == 1) hs += 1;
-        if (result == 2) cs += 1;
-        console.log(`Current Scores : Player- ${hs} Computer- ${cs}`)
-    }
+    let hc = gethumanchoice();
+    let cc = getcompchoice();
+    console.log(`Computer chose : ${cc}\nPlayer chose : ${hc}`)
+    let result = round(hc , cc);
+    
+    if (result == 1) hs += 1;
+    if (result == 2) cs += 1;
+    console.log(`Current Scores : Player- ${hs} Computer- ${cs}`)
+    
     if (cs == hs){
         console.log(`It is a draw. \nGame Ends.`);
     }
@@ -61,4 +60,4 @@ function play(){
         console.log(`Player wins. \nGame Ends.`)
     }
 }
-play();
+// play();
