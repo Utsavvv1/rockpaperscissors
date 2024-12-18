@@ -1,41 +1,131 @@
 body {
-    background-color: rgb(1, 2, 39);
-    color: white;
-    margin: 0; 
-    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #1c2535 ,#273248 , #354463);
+    color: #ffebd2;
+    display:flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+html {
+    font-family: "Outfit", sans-serif;
+}
+.title {
+    font-weight: 650;
+    font-size: 100px;
+}
+.subheading{
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+}
+
+
+header {
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
 }
 
 /* justify-content (horizontal) and align-items (vertical). */
 
+
 .centre {
     display: flex;
-    /* align-items: center; */
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 10vw;
+    flex-wrap: wrap;
+    margin: 20px;
 
-    gap: 5vw;
 }
+
 .card {
-    border: 5px solid wheat;
-    padding: 5%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 3.5px solid #ffa364;
+    border-radius: 30px;
+    flex: 1 1 200px;
+    max-width: 400px;
+    padding: 40px 20px;
+    font-size: 30px;
 }
 
-#player_score {
+.card img {
+    padding: 10%;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 15px;
+    overflow: hidden;
     
-    text-align: center;
-
-    border: 2px solid white;
-
 }
 
-#comp_score {
-
-    text-align: center;
+button {
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 1s ease;
+    padding: 10px;
+    
 }
 
-
+button img {
+    width: 60px;
+    height: auto;
+    object-fit: contain;
+    
+}
 .choices {
     display: flex;
-    margin-top: 10%;
-    padding: 5%; 
-    border: 1px solid white ;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Align vertically */
+    gap: 15px; /* Space between buttons */
+}
+
+ button.option {
+    background-color: #af4f41;
+    border: 2px solid #273248;
+    border-radius: 8px; 
+    width: 100px; 
+    height: 100px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    cursor: pointer;
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease;  */
+} 
+
+button.option img {
+    width: 60%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain;
+    
+}
+
+.highlight {
+    
+    background-color: #fc7643!important;;
+    /* border: 2px solid #273248 !important;; */
+    transform: scale(1.1); /* Slightly enlarge the button */
+}
+
+.highlightcard {
+    background-color: #ffa364;
+    color: #273248
+    /* transform: scale(1.1); */
+}
+
+#resetbtn {
+    background-color: #fc7643;
+    /* border: 2px solid rgb(48, 57, 68); */
+    color: #ffebd2;
+    border-radius: 20px; 
+    max-width: 100px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    cursor: pointer;
+    margin: 30px;
+    padding: 10px 20px;
+    font-size: 150%;
 }

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="script.js"></script>
+    
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -10,40 +11,44 @@
 <body>
     <header>
         <h1 class="title">Rock Paper Scissors</h1>
+        <div id = 'subHead' class="subheading">First to have a score of 5 wins</div>
     </header>
-    <div class = "centre">
-        <div class = "card" id = "player">
-            <div id="player_score"> Player : </div>
-            <img src = "images/utsav_duo.jpeg" alt = "plyr avatar" width="200px" height="200px" >
-            <div class = "choices">
-                <div id = "rock">
-                    <img src="images/rockgolem.svg">
-                </div>
-                <div id = "paper">
-                    <img src="images/raphael_paper.svg">
-                </div>
-                <div id = "Scissors">
-                    <img src= "images/radix-icons_scissors.svg">
-                </div>
+    <button id = 'resetbtn'> Reset </button>
+    <div class="centre">
+        <!-- Player Card -->
+        <div class="card" id="player">
+            <div id="player_score"> Player: 0</div>
+            <img src="images/utsav_duo.png" alt="player avatar" width="200px" height="200px">
+            <div class="choices">
+                <button class="option" id="rock">
+                    <img src="images/rockgolem.svg" alt="rock">
+                </button>
+                <button class="option" id="paper">
+                    <img src="images/raphael_paper.svg" alt="paper">
+                </button>
+                <button class="option" id="scissors">
+                    <img src="images/radix-icons_scissors.svg" alt="scissors">
+                </button>
             </div>
         </div>
 
-        <div class = "card" id = "computer">
-            <div id="comp_score"> Comp : </div>
-            <img src = "/images/robot.png" alt = "comp avatar" width="200px" height="200px" >
-            <div class = "choices">
-                <div id = "rock-c">
-                    <img src="images/rockgolem.svg">
-                </div>
-                <div id = "paper-c">
-                    <img src="images/raphael_paper.svg">
-                </div>
-                <div id = "scissors-c">
-                    <img src= "images/radix-icons_scissors.svg">
-                </div>
+        <!-- Computer Card -->
+        <div class="card" id="computer">
+            <div id="comp_score"> Comp: 0</div>
+            <img src="images/robot.png" alt="computer avatar" width="200px" height="200px">
+            <div class="choices">
+                <button class="option" id="rock-c">
+                    <img src="images/rockgolem.svg" alt="rock">
+                </button>
+                <button class="option" id="paper-c">
+                    <img src="images/raphael_paper.svg" alt="paper">
+                </button>
+                <button class="option" id="scissors-c">
+                    <img src="images/radix-icons_scissors.svg" alt="scissors">
+                </button>
             </div>
         </div>
-
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
